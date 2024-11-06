@@ -1,0 +1,58 @@
+.products {
+
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+    text-overflow: ellipsis;
+    width: 250px;
+  border-radius: 10px;
+  color: #36558b;
+  text-decoration: none;
+    background-color: white;
+}
+.products h2{
+    text-overflow: ellipsis;
+    white-space: nowrap; /* لا يسمح بالنص بأن يمتد على عدة أسطر */
+    overflow: hidden; /* إخفاء النص الزائد */
+}
+.products p{
+    
+    margin-bottom: 30px;
+    white-space: nowrap; /* لا يسمح بالنص بأن يمتد على عدة أسطر */
+    overflow: hidden; /* إخفاء النص الزائد */
+    text-overflow: ellipsis; /* استبدال النص الزائد بنقاط */
+
+}
+.products a{
+    color: white;
+    text-decoration: none;
+    background-color: #86b7fe;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.products a i{
+    margin-right: 5px;
+    padding-right: 15px;
+    position: relative;
+}
+.products a i::after {
+    content: '';
+    font-size: 5px;
+    color: white;
+    background-color: white;
+    right: 3px;
+    bottom: -16px;
+    position: absolute;
+    width: 1px;
+    height: 50px;
+}
+.products a:hover{
+    background-color: white;
+  color: #86b7fe;
+  border: 1px solid #86b7fe;
+}
+.products a:hover i::after{
+    color: #86b7fe;
+    background-color: #86b7fe;
+}

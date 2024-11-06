@@ -1,0 +1,90 @@
+/* Global CSS */
+*{
+  box-sizing: border-box;
+}
+.container {
+  margin: auto;
+  width: 1700px;
+}
+body {
+  font-family: "Cairo", sans-serif;
+  margin: 0;
+}
+.d-flex{
+  display: flex;
+  justify-content: space-between;
+
+}
+@media (max-width: 768px){
+  .container{
+    width: 400px;
+  }
+}
+@media(min-width:768px){
+  .container{
+    width: 700px;
+  }
+}
+@media(min-width:1300px){
+  .container{
+    width: 1700px;
+  }
+}
+/* Forms  */
+
+.father form {
+  display: flex;
+  flex-direction: column;
+
+
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.father form input{
+  padding: 10px 20px;
+  width: 100%;
+  outline: none;
+  border: 2px solid rgba(235, 235, 235, 0.801);
+  border-radius: 10px;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+.father form p{
+  font-size: 13px;
+  padding: 0;
+  margin: 0;
+  color: red;
+}
+input:focus{
+  border: 5px solid #86b7fe;
+  background-color: #86b6fe2a;
+}
+.register{
+  margin: auto;
+  margin-top: 10px;
+}
+.register button , .registen-nav{
+  padding: 15px 25px;
+  background-color: #86b7fe;
+  color: white;
+  outline: none;
+  border: 1px solid white;
+  transition: 0.3s;
+  cursor: pointer;
+  text-align: center;
+  margin: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.register button:hover , .registen-nav:hover{
+  background-color: white;
+  color: #86b7fe;
+  border: 1px solid #86b7fe;
+}
+.registen-nav{
+  padding: 10px 20px;
+  margin: 5px;
+}
